@@ -1,0 +1,279 @@
+<section class="header">
+    <nav>
+        <a [routerLink]="['/home']"><h3>Instagram</h3></a>
+        <input type="search" placeholder="search" />
+        <ul>
+            <li>
+                <a [routerLink]="['/home']"><img src="../../assets/home.PNG" width="70%"/></a>
+            </li>
+            <li>
+                <a [routerLink]="['/inbox']"><img src="../../assets/messages.PNG" width="70%"/></a>
+            </li>
+            <li>
+                <a [routerLink]="['/explore']"><img src="../../assets/three.PNG" width="70%"/></a>
+            </li>
+            <li class="link2">
+                <a [routerLink]="['/home']"><img src="../../assets/likes.PNG" width="70%"/></a>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li><a href="#">Activity On Your Posts</a></li>
+                        <li><a href="#">When someone likes or comments on one of your posts, you'll see it here.</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="link1">
+                <a [routerLink]="['/home']"><img  src="../../assets/myPhoto.PNG" width="70%"/>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Saved</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Switch Accounts</a></li>
+                            <li><a href="#">Log Out</a></li>
+                        </ul>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</section>
+
+                        
+<!--info section-->
+<section class="my-info">
+    <div class="right">
+        <div class="info">
+            <img [routerLink]="['/profile']" src="../../assets/myPhoto.PNG" width="60%" />
+        </div>
+        <div class="name">
+           <a [routerLink]="['/profile']"> <h5>manar_elsheikh67</h5> </a>
+            <span>Manar Elsheikh</span>
+        </div>
+        <div class="switch">
+            <h4 [routerLink]="['']">Switch</h4>
+        </div>
+    </div>
+    <div class="sugg">
+        <h5>Suggestions For You</h5>
+        <h6>See All</h6>
+    </div>
+    <div class="follow">
+        <div class="right">
+            <div class="info">
+                <img src="../../assets/one.PNG"/>
+            </div>
+            <div class="name">
+                <h5>Nourhan_khaled</h5>
+                <span>Followed by  nour_elshickh858 and other</span>
+            </div>
+            <div class="switch">
+                <h4>Follow</h4>
+            </div>
+        </div>
+        <div class="right">
+            <div class="info">
+                <img src="../../assets/two.PNG"/>
+            </div>
+            <div class="name">
+                <h5>manar_maher</h5>
+                <span>Followed by  menna_mostafa4424 and other</span>
+            </div>
+            <div class="switch">
+                <h4>Follow</h4>
+            </div>
+        </div>
+        <div class="right">
+            <div class="info">
+                <img src="../../assets/three2.PNG"/>
+            </div>
+            <div class="name">
+                <h5>nada_mahmoud</h5>
+                <span>Followed by alaa_mahmoud101 and other</span>
+            </div>
+            <div class="switch">
+                <h4>Follow</h4>
+            </div>
+        </div>
+        <div class="right">
+            <div class="info">
+                <img src="../../assets/four.PNG"/>
+            </div>
+            <div class="name">
+                <h5>hla_yasser</h5>
+                <span>Followed by sharma-mahomud15 and other</span>
+            </div>
+            <div class="switch">
+                <h4>Follow</h4>
+            </div>
+        </div>
+        <div class="right">
+            <div class="info">
+                <img src="../../assets/five.PNG"/>
+            </div>
+            <div class="name">
+                <h5>shroq_meky</h5>
+                <span>Followed by eman_r_mahmoued and other</span>
+            </div>
+            <div class="switch">
+                <h4>Follow</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<!--body bar section start-->
+<div class="body">
+    <section class="left">
+        <!--status start-->
+
+        <div class="status">
+            <div class="image">
+                <img src="../../assets/1.PNG"  />
+                <h6>mayda...</h6>
+            </div>
+            <div class="image">
+                <img src="../../assets/2.PNG"/>
+                <h6>ahlam ..</h6>
+            </div>
+            <div class="image">
+                <img src="../../assets/3.PNG"/>
+                <h6>deenadhy...</h6>
+            </div>
+            <div class="image">
+                <img src="../../assets/4.PNG" />
+                <h6>vikin</h6>
+            </div>
+            <div class="image">
+                <img src="../../assets/5.PNG" />
+                <h6>siva</h6>
+            </div>
+            <div class="image">
+                <img src="../../assets/6.PNG" />
+                <h6>mai sol...</h6>
+            </div>
+            <div class="image">
+                <img src="../../assets/7.PNG" />
+                <h6>nada k...</h6>
+            </div>
+            <div class="image">
+                <img src="../../assets/8.PNG" />
+                <h6>mohammed...</h6>
+            </div>
+        </div>
+        <!--folowed members-->
+        <div class="member">
+            <div class="profile">
+                <img src="../../assets/1.PNG"/>
+                <h6>gehad zakria</h6>
+                <span>...</span>
+            </div>
+            <div class="photos">
+                <img src="../../assets/p1.PNG"/>
+            </div>
+            <div class="share">
+                <div class="heart">
+                    <img src="../../assets/heart.PNG">
+                    <img src="../../assets/comment.PNG">
+                    <img src="../../assets/share.PNG">
+                </div>
+                <img class="bookmark" src="../../assets/bookmark.PNG">
+            </div>
+            <div class="like">
+                <img src="../../assets/5.PNG"/>
+                <p>liked by shahd_elsheikh and others</p>
+            </div>
+            <span class="spann">3 DAYS AGO</span>
+        </div>
+        <div class="member">
+            <div class="profile">
+                <img src="../../assets/2.PNG"/>
+                <h6>hadir atef</h6>
+                <span>...</span>
+            </div>
+            <div class="photos">
+                <img src="../../assets/p2.PNG" />
+            </div>
+            <div class="share">
+                <div class="heart">
+                    <img src="../../assets/heart.PNG">
+                    <img src="../../assets/comment.PNG">
+                    <img src="../../assets/share.PNG">
+                </div>
+                <img class="bookmark" src="../../assets/bookmark.PNG">
+            </div>
+            <div class="like">
+                <img src="../../assets/6.PNG"/>
+                <p>liked by reem_rashed and others</p>
+            </div>
+            <span class="spann">3 DAYS AGO</span>
+        </div>
+        <div class="member">
+            <div class="profile">
+                <img src="../../assets/3.PNG" />
+                <h6>dr salma</h6>
+                <span>...</span>
+            </div>
+            <div class="photos">
+                <img src="../../assets/p3.PNG"/>
+            </div>
+            <div class="share">
+                <div class="heart">
+                    <img src="../../assets/heart.PNG">
+                    <img src="../../assets/comment.PNG">
+                    <img src="../../assets/share.PNG">
+                </div>
+                <img class="bookmark" src="../../assets/bookmark.PNG">
+            </div>
+            <div class="like">
+                <img src="../../assets/7.PNG"/>
+                <p>liked by hader_mousa and others</p>
+            </div>
+            <span class="spann">3 DAYS AGO</span>
+        </div>
+        <div class="member">
+            <div class="profile">
+                <img src="../../assets/4.PNG"/>
+                <h6>ghader ahmed</h6>
+                <span>...</span>
+            </div>
+            <div class="photos">
+                <img src="../../assets/p4.PNG"/>
+            </div>
+            <div class="share">
+                <div class="heart">
+                    <img src="../../assets/heart.PNG">
+                    <img src="../../assets/comment.PNG">
+                    <img src="../../assets/share.PNG">
+                </div>
+                <img class="bookmark" src="../../assets/bookmark.PNG">
+            </div>
+            <div class="like">
+                <img src="../../assets/8.PNG"/>
+                <p>liked by mohamed_soliman and others</p>
+            </div>
+            <span class="spann">3 DAYS AGO</span>
+        </div>
+        <div class="member">
+            <div class="profile">
+                <img src="../../assets/5.PNG"/>
+                <h6>aya fawzy</h6>
+                <span>...</span>
+            </div>
+            <div class="photos">
+                <img src="../../assets/p5.PNG"/>
+            </div>
+            <div class="share">
+                <div class="heart">
+                    <img src="../../assets/heart.PNG">
+                    <img src="../../assets/comment.PNG">
+                    <img src="../../assets/share.PNG">
+                </div>
+                <img class="bookmark" src="../../assets/bookmark.PNG">
+            </div>
+            <div class="like">
+                <img src="../../assets/4.PNG"/>
+                <p>liked by moamen_ahmed and others</p>
+            </div>
+            <span class="spann">3 DAYS AGO</span>
+        </div>
+    </section>
+</div>

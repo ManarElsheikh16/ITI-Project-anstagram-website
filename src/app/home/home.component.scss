@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+}
+.header {
+    width: 100%;
+    height: 8vh;
+    background: #ffff;
+    border-bottom: 1px solid rgb(231, 227, 227);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header nav {
+    width: 70%;
+    height: 100%;
+    background: #ffff;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15%;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+}
+nav a:active{
+    h3{
+    color: gainsboro;
+    }
+}
+nav a h3 {
+    font-family: "Lobster", cursive;
+    font-weight: 100;
+    font-size: 25px;
+    color: rgb(44, 43, 43);
+}
+
+nav input {
+    height: 4vh;
+    width: 24%;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid rgb(231, 227, 227);
+    outline: none;
+    border-radius: 2px;
+}
+nav ul li {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.fas,
+.far {
+    color: rgb(44, 43, 43);
+    font-size: 20px;
+}
+
+
+/*body section start */
+
+.body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.status,
+.members {
+    width: 45%;
+    margin-left: 15%;
+    background: #ffff;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    height: 100px;
+    margin-top: 6%;
+    border-radius: 2px;
+    border: 1px solid rgb(221, 218, 218);
+    overflow: hidden;
+}
+
+.members {
+    height: 100vh;
+}
+
+.image {
+    margin-left: 2%;
+    text-align: center;
+    cursor: pointer;
+}
+.image img {
+    width: 60px;
+    height: 60px;
+    padding: 2px;
+}
+
+.member {
+    width: 45%;
+    margin-left: 15%;
+    background: #ffff;
+    height: 102vh;
+    margin-top: 3%;
+    border-radius: 2px;
+    border: 1px solid rgb(221, 218, 218);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(221, 218, 218);
+    height: 60px;
+}
+
+.profile img,
+h6,
+span {
+    cursor: pointer;
+}
+
+.profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 0 !important;
+}
+
+.profile h6 {
+    font-size: 15px;
+    margin-left: -3% !important;
+}
+.profile span {
+    margin-left: 70% !important;
+    font-size: 30px !important;
+    margin-bottom: 15px !important;
+}
+
+.photos img {
+    width: 100%;
+    height: 550px;
+}
+
+.share {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-left: 5%;
+}
+.heart {
+    transform: translate(-20%,0%);
+}
+.share .bookmark{
+    transform: translate(50%,0%); 
+}
+.share i {
+    font-size: 25px;
+    padding: 10px;
+    color: rgb(70, 67, 67);
+}
+
+.like {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2px;
+}
+
+.like img {
+    width: 20px;
+    height: 20px;
+    float: left;
+    border-radius: 50%;
+    border: 1px solid rgb(221, 218, 218);
+    margin-right: 5px;
+}
+
+.member span {
+    font-size: 8px;
+    color: #777475;
+}
+
+.my-info {
+    width: 23%;
+    height: 70vh;
+    position: fixed;
+    z-index: 2;
+    margin-left: 62%;
+    margin-top: 0;
+}
+
+.right {
+    display: flex;
+    margin-top: 1%;
+}
+
+.info img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border: 1px solid rgb(221, 218, 218);
+    border-radius: 50%;
+    float: left;
+    cursor: pointer;
+}
+.name a{
+    text-decoration: none;
+}
+.name a h5 {
+    margin-top: 3%;
+    color: #222121;
+    cursor: pointer;
+}
+.name a:active{
+    h5{
+    color: gainsboro;
+    }
+}
+
+.name span {
+    color: #888586;
+    font-size: 10px;
+}
+
+.switch {
+    margin: 5% 0px 0 25%;
+    color: rgb(10, 177, 243);
+}
+
+.switch h4 {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.sugg {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.sugg h5 {
+    font-weight: 100;
+    color: #888586;
+}
+
+@media (max-width: 750px) {
+    .my-info {
+        display: none;
+    }
+    .header nav {
+        width: 100%;
+        justify-content: space-around;
+        margin: 0;
+    }
+    .status,
+    .member {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+        margin-top: 11%;
+    }
+    .member {
+        margin-top: 2%;
+        border: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .status,
+    .member {
+        margin-top: 15%;
+    }
+}
+.link2{
+    color: black;
+}
+.sub-menu-1{
+    display: none;
+}
+nav ul .link1:active .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background-color: white;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+nav ul .link1:active .sub-menu-1 ul{
+    position: absolute;
+    display: block;
+    margin: 10px;
+}
+nav ul .link1:active .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted gainsboro;
+    background-color: white;
+    border-radius: 0;
+    text-align: left;
+}
+nav ul .link1:active .sub-menu-1 ul li a{
+    color:black;
+}
+nav ul .link1:active .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+nav ul .link1:active .sub-menu-1 ul li a:hover{
+    background-color: gainsboro;
+}
+
+
+
+.sub-menu-2{
+    display: none;
+}
+nav ul .link2:active .sub-menu-2{
+    display: block;
+    position: absolute;
+    background-color: white;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+nav ul .link2:active .sub-menu-2 ul{
+    position: absolute;
+    display: block;
+    margin: 10px;
+}
+nav ul .link2:active .sub-menu-2 ul li{
+    width: 320px;
+    padding: 10px;
+    border-bottom: 1px dotted gainsboro;
+    background-color: white;
+    border-radius: 0;
+    text-align: center;
+}
+nav ul .link2:active .sub-menu-2 ul li a{
+    color:black;
+}
+nav ul .link2:active .sub-menu-2 ul li:last-child{
+    border-bottom: none;
+}
+nav ul .link2:active .sub-menu-2 ul li a:hover{
+    background-color: gainsboro;
+}
+
+
+
+

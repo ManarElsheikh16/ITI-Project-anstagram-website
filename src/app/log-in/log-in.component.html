@@ -1,0 +1,36 @@
+<div class="container-fluid">
+       <div class="col-ms-4" >
+        <div class="col-ms-12 one" > 
+            <div class="large">
+          <img src="../../assets/Capture.PNG"  width="70%">
+            </div>
+          <br><br>
+          <form class="col-ms-12" [formGroup]="exform" >
+              <input type="text" class="form-control input-1" formControlName="name" placeholder="Phone number, username, or email"  >
+              <div *ngIf="name.invalid && name.touched">
+              <small *ngIf="name.errors?.required" class="text-danger">username is required<br></small>
+              <small *ngIf="name.errors?.minlength" class="text-danger">invalid name(minimum length 10)</small>
+              </div>
+               <br>
+              <input type="password" class="form-control input-2" formControlName="password" placeholder="Password" >
+              <div *ngIf="password.invalid && password.touched">
+              <small *ngIf="password.errors && password.errors.required" class="text-danger">password is required<br></small>
+              <small *ngIf="password.errors && password.errors.minlength" class="text-danger">invalid password(minimum length 6)</small>
+              </div>
+              <br>
+              <button  type="submit" [disabled]="exform.invalid" class="btn btn-primary btn-1" [routerLink]="['/home']">Log In</button>
+              <br><br>
+              <hr class="hr-1"> <p>OR</p> <hr class="hr-2">
+              <div class="divv">
+              <img src="../../assets/Capture2.PNG" class="face">
+              <p class="paragraph-2">Log in with Facebook</p>
+              </div>
+              <a [routerLink]="['/pass']"><p class="paragraph">Forgot password?</p></a>
+          </form>
+          </div>
+          
+          <div class="col-ms-12 two">
+            <p>Don't have an account?<a [routerLink]="['/register']">Sign up</a></p>
+           </div>
+       </div>  
+</div>

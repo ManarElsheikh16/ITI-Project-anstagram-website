@@ -1,0 +1,54 @@
+<div class="container-fluid">
+    <div class="col-ms-4" >
+     <div class="col-ms-12 one" > 
+         <div class="large">
+       <img src="../../assets/Capture.PNG"  width="70%">
+         </div>
+       <pre class="pre-1">Sign up to see photos and videos
+    from your friends
+       </pre>
+       <div class="divv">
+           <img src="../../assets/imgingest-2047115016217772027.png" class="face" >
+           <p class="paragraph-2">Log in with Facebook</p>
+       </div>
+       <br>
+       <hr class="hr-1"> <p>OR</p> <hr class="hr-2">
+       <form class="col-ms-12" [formGroup]="exform3" >
+           <input type="text" class="form-control input-1" formControlName="email" placeholder="Mobile Number or Email"  >
+           <div *ngIf="email.invalid && email.touched">
+           <small *ngIf="email.errors?.required" class="text-danger">email is required<br></small>
+           <small *ngIf="email.errors?.minlength" class="text-danger">(minimum length 20)</small>
+           <small *ngIf="email.errors?.email" class="text-danger">invalid email</small>
+           </div>
+            <br>
+           <input type="text" class="form-control input-2" formControlName="fullName" placeholder="Full Name" >
+           <div *ngIf="fullName.invalid && fullName.touched">
+           <small *ngIf="fullName.errors && fullName.errors.required" class="text-danger">full name is required<br></small>
+           <small *ngIf="fullName.errors && fullName.errors.minlength" class="text-danger">invalid full name(minimum length 6)</small>
+           </div>
+           <br>
+           <input type="text" class="form-control input-1" formControlName="userName" placeholder="Username"  >
+           <div *ngIf="userName.invalid && userName.touched">
+           <small *ngIf="userName.errors?.required" class="text-danger">username is required<br></small>
+           <small *ngIf="userName.errors?.minlength" class="text-danger">invalid username(minimum length 10)</small>
+           </div>
+            <br>
+           <input type="password" class="form-control input-2" formControlName="password" placeholder="Password" >
+           <div *ngIf="password.invalid && password.touched">
+           <small *ngIf="password.errors && password.errors.required" class="text-danger">password is required<br></small>
+           <small *ngIf="password.errors && password.errors.minlength" class="text-danger">invalid password(minimum length 6)</small>
+           </div>
+           <br>
+           <button  type="submit" [disabled]="exform3.invalid" class="btn btn-primary btn-1" [routerLink]="['/home']">Sign up</button>
+           <br><br>
+           <pre class="pre-2">By signing up, you agree to our Terms, Data
+         Policy and Cookies Policy
+           </pre>
+       </form>
+       </div>
+       <div class="col-ms-12 two">
+         <p>Have an account?<a [routerLink]="['']">Log in</a></p>
+        </div>
+    </div>  
+</div>
+
